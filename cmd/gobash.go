@@ -3,6 +3,7 @@ package cmd
 import (
 	"fmt"
 	"os/exec"
+	// "k8s.io/client-go"
 )
 
 
@@ -20,4 +21,8 @@ func List(relative_path string) (result string) {
 	}
 	// otherwise, print the output from running the command
   return fmt.Sprint(string(out))
+}
+
+func GetNamespaces() (result string) {
+	return
 }
